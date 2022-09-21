@@ -6,6 +6,8 @@ Trading simulator and client for automated trading.
 
 ## Setup
 
+If you haven't installed Python 3 yet, please download from [here](https://www.python.org/downloads/).
+
 Create a virtual environment to install the Python dependencies
 
 ```sh
@@ -16,6 +18,12 @@ and activate it.
 
 ```sh
 source ./automated-trading-venv/bin/activate
+```
+
+or if you are on Windows
+
+```sh
+automated-trading-venv\Scripts\activate.bat
 ```
 
 Install the necessary dependencies
@@ -32,13 +40,15 @@ and run the server from the root directory.
 python -m simulator.main
 ```
 
-All done, you can now connect to the server at `127.0.0.1:5000` and make
-requests. Enjoy!
+All done, you can now connect to the server at `127.0.0.1:5000` and make requests.
+You can also view the market at [127.0.0.1:5000/market](http://127.0.0.1:5000/market).
+Enjoy!
 
 ### Run the client interactively
 
-Run an interactive Python shell and then import the module `import client`.
-This can then be used to call the different available functions.
+Make sure you are in the virtual environment and run an interactive Python shell.
+Then import the module `import client`. This can be used to call the different
+available functions.
 
 Available functions:
 
