@@ -57,7 +57,7 @@ class IcebergOrder:
         """Revise a parent order by updating its iceberg slice.
         The slice should be updated accordingly to what we need for the parent, may need to do
         nothing, cancel the last slice or revise the last slice.
-        Note: Not all states of a slice can be updated. PENDING_STATES are good to update.
+        Note: Not all states of a slice can be updated. ACTIVE_STATES are good to update.
         """
         pass
 
@@ -69,7 +69,7 @@ class IcebergOrder:
 
     def cancel(self) -> None:
         """Cancel a slice if possible.
-        Note: Not all states of a slice can be updated. PENDING_STATES are good to update.
+        Note: Not all states of a slice can be updated. ACTIVE_STATES are good to update.
         """
         pass
 
